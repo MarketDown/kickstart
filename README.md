@@ -17,11 +17,11 @@ My hope is that someone can get some use out of them.
 
 ### Centos 7 Workstation Script
 This script builds a CentOS 7 Virtual (or physical) system with the following features.
-..* LVM managed file system
-..* Cinnamon UE
-..* Luks encrypted system drive
-..* GPT partitioning  scheme(BIOS or EFI boot)
-..* BIOS device names
+  * LVM managed file system
+  * Cinnamon UE
+  * Luks encrypted system drive
+  * GPT partitioning  scheme(BIOS or EFI boot)
+  * BIOS device names
 
 ## Usage Tips
 To use boot off the CentOS 7 Installation DVD and immediately press the tab key.
