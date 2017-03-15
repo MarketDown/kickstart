@@ -1,4 +1,4 @@
-# kickstart
+# Kickstart Scriprs
 
 #### Table of Contents
 
@@ -6,7 +6,7 @@
 2. [Script Descriptions](#script-descriptions)
     * [centos_7_workstation.cfg](#centos-7-workstation-script)
 3. [Usage Tips](#usage-tips)
-4. [Development - Guide for contributing to the module](#development)
+4. [Development - Guide for contributing](#development)
 
 ## Overview
 
@@ -26,8 +26,13 @@ This script builds a CentOS 7 Virtual (or physical) system with the following fe
 ## Usage Tips
 To use boot off the CentOS 7 Installation DVD and immediately press the tab key.
 I host my kickstart files on an internal web server for ease of use but any of the standard methods of
-referencing the kickstart file location will work e.g.
-    ```ks=http://mycool.web.server/ks/centos_7_workstation.cfg```
+referencing the kickstart file location will work e.g. backspace out ```rd.live.check quiet``` and replace it with
+the following if using dhcp.
+```ks=http://mycool.web.server/ks/centos_7_workstation.cfg```
+
+otherwise you can specify a static ip address e.g.
+
+```ks=http://mycool.web.server/ks/centos_7_workstation.cfg ip=10.10.10.10 netmask=255.255.255.0 gateway=10.10.10.1 dns=10.10.10.100```
 
     
 ## Development
