@@ -1,4 +1,4 @@
-# Kickstart Scriprs
+# Kickstart Scripts
 
 #### Table of Contents
 
